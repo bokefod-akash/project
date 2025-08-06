@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"><h1>PaySphere</h1></div>
+        <ul class="sidebar-item">
+            <li><i class="fas fa-home"></i><a href="index.html">DashBoard</a></li>
+            <li><i class="fa-regular fa-user"></i><a href="profile.html">Profile</a></li>
+            <li><i class="fas fa-wallet"></i><a href="salery-breackdown.html">Salery Breakdown</a></li>
+            <li><i class="fas fa-file-invoice-dollar"></i><a href="payslips.html">Payslips</a></li>
+            <li class="active"><i class="fas fa-paper-plane"></i><a href="raise-req.html">Raise Request</a></li>
+            <li><i class="fas fa-sign-out-alt"></i><a href="req-status.html">Request Status</a></li>
+        </ul>
+        <button id="logout">LOGOUT</button>
+    </div>
+    <div class="main">
+
+        <div class="header">
+            <div class="info">
+                <!-- <p>Welcome employee name</p> -->
+                <p>DATE</p>
+            </div>
+        </div>
+        <hr>
+
+        <h2 class="sec-name ">Raise Request</h2>
+
+        <div class="main-con">
+            <form action="">
+                <div id="req-status">
+                    <label for="requestType">Request Type</label>
+                    <select name="requestType" id="requestType">
+                        <option value="">-- Select Request Type --</option>
+                        <option value="leave">Leave Request</option>
+                        <option value="salaryCorrection">Salary Correction</option>
+                        <option value="documentRequest">Document Request (e.g. Salary Slip, Experience Letter)</option>
+                        <option value="shiftChange">Shift Change Request</option>
+                        <option value="remoteWork">Work from Home Request</option>
+                        <option value="reimbursement">Expense Reimbursement</option>
+                        <option value="technicalSupport">Technical Support</option>
+                        <option value="updatePersonalDetails">Update Personal Information</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div id="descri">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="10" cols="40" placeholder="Please describe your request in detail..."></textarea>
+                </div>
+                <button id="submit-btn">Submit</button>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>

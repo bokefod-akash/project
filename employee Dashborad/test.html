@@ -1,0 +1,87 @@
+<!-- Request Status Page -->
+<div class="content">
+    <h2>My Requests</h2>
+    <table class="request-table">
+        <thead>
+            <tr>
+                <th>Request ID</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>HR Remark</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>E001</td>
+                <td>Reimbursement</td>
+                <td>Travel Expenses</td>
+                <td>₹1200</td>
+                <td><span class="status pending">Pending</span></td>
+                <td>Will be processed soon</td>
+            </tr>
+            <tr>
+                <td>E002</td>
+                <td>Incentive</td>
+                <td>Performance Bonus</td>
+                <td>₹5000</td>
+                <td><span class="status approved">Approved</span></td>
+                <td>Credited to salary</td>
+            </tr>
+            <tr>
+                <td>E003</td>
+                <td>Reimbursement</td>
+                <td>Office Supplies</td>
+                <td>₹800</td>
+                <td><span class="status rejected">Rejected</span></td>
+                <td>Bill not clear</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<style>
+.content {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    max-width: 900px;
+}
+
+.request-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.request-table th, .request-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.request-table thead {
+    background: #f4f4f4;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.status.pending {
+    background: #ffeeba;
+    color: #856404;
+}
+
+.status.approved {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status.rejected {
+    background: #f8d7da;
+    color: #721c24;
+}
+</style>

@@ -8,13 +8,17 @@
 }
 body{
     display: flex;
-    background-color: #f4f6f9;
+    background-color: white;
+    padding-right: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
 }
 .sidebar{
     text-align: center;
     height:100vh;
     background-color: white;
-    width: 200px; 
+    width: 230px; 
     background-color:#1c1e3d;
     padding: 10px;
     display: flex;
@@ -87,11 +91,17 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    
 }
 .main-con .card{
     height: 180px;
     width: 250px;
-    background-color:#e7e0d3;
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -106,7 +116,7 @@ body{
     color: #1c2c4c;
     margin-top: 25px;
 }
-.card button{
+.card button,#down-btn{
    margin-bottom: 20px;
    font-size: 1rem;
    padding: 0.3rem 1rem;
@@ -114,7 +124,7 @@ body{
    border: none;
    color: #fff;
 }
-.payslip button{
+#down-btn{
     background-color:#dfa037;
 }
 .raise-calim button{
@@ -130,6 +140,8 @@ body{
         display: none;
     }
 }
+
+
 
 /* profile styleing */
 
@@ -171,6 +183,18 @@ body{
     font-size:x-large;
     font-weight: 400;
 }
+#edit-btn{
+    margin-top: 20px;
+    align-self: center;
+    background-color: #1a2a50;
+    color: white;
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+}
+
 
 /* Raise Request styleing */
 form{
@@ -191,11 +215,13 @@ form{
 #req-status select{
     width: 60%;
     height: 50px;
-    background-color: #e7e0d3;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 #descri textarea{
     width: 60%;
-    background-color: #e7e0d3;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 #submit-btn{
     background-color: #1a2a50;
@@ -205,5 +231,22 @@ form{
     width: 100px;
     border-radius: 1rem;
 }
+
+/* payslips page styling */
+.payslips{
+    flex-direction: column;
+    gap: 20px;
+}
+.slips{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-size: larger;
+    font-weight: 600;
+    height: 60px;
+}
+
 
 
